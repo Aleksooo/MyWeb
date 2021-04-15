@@ -1,0 +1,245 @@
+:root{
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  color: black;
+  --background-color: #4682B4;
+}
+
+body{
+  background-color: #F0F8FF;
+  margin: 0;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+
+.navbar{
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 3rem;
+  border-radius: 1.5rem;
+  color: white;
+}
+
+.menu-img{
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem 0 0 1.5rem;
+  background-color: var(--background-color);
+
+  transition: background-color 300ms ease;
+}
+
+.menu-img-svg{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.menu-img-rotate{
+  border-radius: 1.5rem;
+  transform: rotateZ(-90deg);
+
+}
+
+.menu-img:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+  /* transition: background-color 300ms ease; */
+}
+
+.menu-buttons{
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  width: 372px;
+  background-color: var(--background-color);
+  border-radius: 0 1.5rem 1.5rem 0;
+
+}
+
+.menu-buttons-off{
+  opacity: 0;
+  z-index: -1;
+  width: 0;
+
+}
+
+.menu-button-link{
+  text-decoration: none;
+  color: white;
+}
+
+.menu-button{
+  margin: 0 1rem 0 1rem;
+  /* margin-right: 1rem; */
+  transition: background-color 400ms ease;
+}
+
+.menu-button:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+.main-page{
+  /* width: calc(100vw - 2rem); */
+  width: 100%;
+  height: calc(100vh - 5rem);
+  /* margin: 0 auto; */
+  display: flex;
+  align-items: center;
+  /* background-color: blueviolet; */
+}
+
+.main-text{
+  position: relative;
+  display: flex;
+  font-size: 30px;
+  width: 50%;
+  height: 100%;
+  padding-top: 20%;
+  /* background-color: blue; */
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.main-text ::selection {
+   background: transparent;
+}
+.main-text ::-moz-selection {
+   background: transparent;
+}
+
+.ball-canvas{
+  position: absolute;
+  z-index: 1;
+}
+
+.projects{
+  width: 100%;
+  height: 100%;
+  padding-top: 3rem;
+}
+
+.heading{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.projects-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.article{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.article-title{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 2rem;
+  background-color: var(--background-color);
+}
+
+.article-title-off{
+  border-radius: 1rem;
+}
+
+.article-title-on{
+  border-radius: 1rem 1rem 0 0;
+}
+
+.arrow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  margin: 0 1rem 0 1rem;
+  /* background-color: #174A75; */
+  transition: background-color 400ms ease;
+  transition: transform 300ms ease;
+}
+
+.arrow-svg{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.arrow-rotate{
+  transform: rotateZ(180deg);
+  transition: transform 300ms ease;
+}
+
+.arrow:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.line{
+  width: 2px;
+  height: 1.7rem;
+  background-color: white;
+  border-radius: 1px;
+}
+
+.article-name{
+  margin-left: 1rem;
+  font-weight: 400;
+}
+
+.article-text-off{
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+  /* height: 0px; */
+  color: rgba(0, 0, 0, 0);
+  /* transition: height 1s ease; */
+}
+
+.article-text-on{
+  /* flex-basis: 100%; */
+  height: 100%;
+  color: white;
+  /* transition: height 300ms ease; */
+  transition: color 300ms ease;
+  background-color: var(--background-color);
+
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.new-page-link{
+  color: white;
+}
+/* -------------------------------------------------- */
+
+.bottom{
+  margin-top: 4rem;
+  padding: 1rem 0 1rem 0;
+  height: auto;
+  width: 100%;
+  background-color: var(--background-color);
+  /* border-radius: 1rem 1rem 0 0; */
+  border-radius: 1rem;
+}
+
+.bottom-text{
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-left: 1rem;
+  text-align: center;
+}

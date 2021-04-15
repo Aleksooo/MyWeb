@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Подключение p5.js -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script> -->
+    <script src="js/p5.min.js"></script>
+
+    <!-- Подключение css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+
+  <body>
+    <!-- Меню навигации -->
+    <nav class="navbar">
+      <!-- <img src="img/lines.png" class="menu-img" id="menu-img"> -->
+      <div class="menu-img" id="menu-img">
+        <svg class="menu-img-svg" viewBox="0 0 150 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line id="Line 3" x1="5" y1="5" x2="145" y2="5" stroke="white" stroke-width="10" stroke-linecap="round"/>
+        <line id="Line 4" x1="5" y1="45" x2="145" y2="45" stroke="white" stroke-width="10" stroke-linecap="round"/>
+        <line id="Line 5" x1="5" y1="85" x2="145" y2="85" stroke="white" stroke-width="10" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <div class="menu-buttons" id="menu-buttons">
+        <a href="#" class="menu-button-link">
+          <span class="menu-button">Главная</span>
+        </a>
+        <a href="#" class="menu-button-link">
+          <span class="menu-button">Проекты</span>
+        </a>
+        <a href="#" class="menu-button-link">
+          <span class="menu-button">Об авторе</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Главная страница -->
+    <section class="main-page" id="main-page">
+      <div class="main-text">
+        <p>Интересные компьютерные модели на одном сайте!</p>
+      </div>
+    </section>
+
+    <section class="projects">
+      <span class="heading">Список проектов</span>
+
+      <section class="projects-list">
+        <div class="article">
+          <div class="article-title article-title-off" id="first-article-title">
+            <!-- <img src="img/arrow.svg" class="arrow" id="first-arrow"> -->
+            <div class="arrow" id="first-arrow">
+              <svg class="arrow-svg" viewBox="0 0 142 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="7.07107" y1="8" x2="70.7107" y2="71.6396" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="71" y1="71.6396" x2="134.64" y2="8" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="line"></div>
+            <span class="article-name">Реалистичная веревка</span>
+          </div>
+
+          <span class="article-text-off" id="first-article-text">
+            Это компьтерная симуляция демонстрирует реалистичное поведение нитки.
+            Как это работает: сама нитка состоит из множества маленьких прямых линий, являющиеся пружинками.
+            Каждый кадр для каждого элемента просчитывается упругая сила, которая смещает его в определнную сторону.
+            <a href="RealisticRope.html" class="new-page-link">Узнать больше</a>
+          </span>
+        </div>
+      </section>
+    </section>
+
+    <section class="bottom">
+      <div class="bottom-text">
+        Сайт создан Семенчуком Алексеем. Не для комерческого использования. <br>
+        По всем вопросам и предложния обращаться на почту: Semenchuk-aleksey@yandex.ru
+      </div>
+    </section>
+
+    <!-- Подключение js -->
+    <script src="js/bounceBall.js"></script>
+    <script src="js/eventHandler.js"></script>
+  </body>
+</html>
